@@ -9,5 +9,5 @@
 3.对于项目中的SON格式化处理对象，采用双检锁单例模式进行管理，从而复用对象，避免了重复创建对象的开销，便于集中维护管理。  
 4.采用Nginx完成前端项目部署、采用Docker容器完成后端项目部署，并且使用宝塔面板对项目进行运维监控。  
 5.使用JUnit Jupiter API的@Test注解和Assertions类实现对用户模块的单元测试，测试覆盖度达到90%。  
-6.通过Spring Boot的多套application-{en-yml配置文件实现多环境，并通过指定spring.profiles.active:=prod实现生产环境部署。  
-7.使用Nginⅸ网关统一接受前端页面和后端接口请求，并通过其proy_pasS反向代理配置解决跨域问题。  
+6.通过Spring Boot的多套application-{en-yml配置文件实现多环境，并通过指定spring.profiles.active=prod实现生产环境部署。  
+7.使用Nginx网关统一接受前端页面和后端接口请求，并通过其proy_pass反向代理配置解决跨域问题。  
